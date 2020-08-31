@@ -1,8 +1,10 @@
 var x =[0,1]
- for(i=2; i<=30; i++){
+var n = 1000000
+ for(i=2; (x[i-1] + x[i-2]<n); i++){
      x.push(x[i-1] + x[i-2])
  }
  console.log(x)
+
 
 
 
